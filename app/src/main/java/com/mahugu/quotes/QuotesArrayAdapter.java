@@ -20,7 +20,7 @@ public class QuotesArrayAdapter extends ArrayAdapter{
     public Object getItem(int position) {
         String quotes = mQuotes[position];
         String author = mAuthor[position];
-        return String.format("By: %s \nThe Quote states: %s", quotes, author);
+        return String.format("The Quote states: %s \nBy: %s", quotes, author);
     }
 
     @Override
