@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ButterKnife.bind(this);
 
 //        mAppNameTextView = (TextView) findViewById(R.id.appNameTextView);
-//        Typeface opensans = Typeface.createFromAsset(getAssets(), "fonts/opensans_regular.ttf");
-//        mAppNameTextView.setTypeface(opensans);
+//        Typeface fonts = Typeface.createFromAsset(getAssets(), "fonts/opensans_regular.ttf");
+//        mAppNameTextView.setTypeface(fonts);
 
         mQuoteEditText = (EditText) findViewById(R.id.quoteEditText);
         mbutton = (Button) findViewById(R.id.button);
