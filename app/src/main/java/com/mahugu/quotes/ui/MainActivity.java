@@ -27,18 +27,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        mQuoteEditText = (EditText) findViewById(R.id.quoteEditText);
-        mbutton = (Button) findViewById(R.id.button);
-
         mbutton.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         if(v == mbutton) {
-            String location = mQuoteEditText.getText().toString();
+            String id = mQuoteEditText.getText().toString();
             Intent intent = new Intent(MainActivity.this, QuotesActivity.class);
-            intent.putExtra("location", location);
+            intent.putExtra("id", id);
             startActivity(intent);
         }
     }
