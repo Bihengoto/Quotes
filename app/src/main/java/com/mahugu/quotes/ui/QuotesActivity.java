@@ -40,14 +40,14 @@ public class QuotesActivity extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        String author = intent.getStringExtra("author");
-        getQuote(author);
+        String id = intent.getStringExtra("id");
+        getQuote(id);
 
     }
 
-    private void getQuote(String location) {
+    private void getQuote(String id) {
         final QuoteService quoteService = new QuoteService();
-        quoteService.findQuote(location, new Callback() {
+        quoteService.findQuote(id, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
                 e.printStackTrace();
